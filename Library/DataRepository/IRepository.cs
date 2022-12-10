@@ -19,7 +19,7 @@ namespace Library.DataRepository
 
         public bool Exists(int id);
 
-        public void Update(T item);
+        public T Update(T item);
 
         public List<T> Find(Expression<Func<T, bool>> expression);
     }

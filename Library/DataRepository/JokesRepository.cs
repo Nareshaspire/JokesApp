@@ -49,10 +49,11 @@ namespace Library.DataRepository
             }
         }
 
-        public void Update(Joke joke)
+        public Joke Update(Joke joke)
         {
             _context.Update(joke);
             _context.SaveChanges();
+            return joke;
         }
 
         public List<Joke> Find(Expression<Func<Joke,bool>> expression)
