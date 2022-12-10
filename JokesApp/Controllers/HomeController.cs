@@ -1,4 +1,5 @@
-﻿using JokesApp.Models;
+﻿using Library.Models;
+using JokesApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokesApp", "JokesApp\JokesApp.csproj", "{AFD328D1-1965-4DE0-8FE0-6045439B2E5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{F3F4D205-2F28-4E66-95E0-BB8490F8219D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AFD328D1-1965-4DE0-8FE0-6045439B2E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFD328D1-1965-4DE0-8FE0-6045439B2E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFD328D1-1965-4DE0-8FE0-6045439B2E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F4D205-2F28-4E66-95E0-BB8490F8219D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F4D205-2F28-4E66-95E0-BB8490F8219D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F4D205-2F28-4E66-95E0-BB8490F8219D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F4D205-2F28-4E66-95E0-BB8490F8219D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
