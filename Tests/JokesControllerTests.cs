@@ -44,6 +44,7 @@ namespace Tests
                     JokeQuestion = "Why aren’t koalas actual bears?",
                     JokeAnswer = "The don’t meet the koalafications.",
                 }
+               
             };
 
             mock.Setup(m => m.GetAll()).Returns(() => jokes);

@@ -16,3 +16,15 @@ html {
 body {
   margin-bottom: 60px;
 }
+table{
+    background-color:whitesmoke;
+}
+td{
+    text-decoration:none;
+}
+p {
+    background-color: #FFD700;
+    text-decoration:none;
+    border-radius: 50px;
+    width: fit-content;
+}
