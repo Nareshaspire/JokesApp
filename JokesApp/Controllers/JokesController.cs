@@ -51,14 +51,14 @@ namespace Library.Controllers
             return View(joke);
         }
 
-        // GET: Jokes/Create
+        // GET: Jokes/Create functionality
         [Authorize]
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Jokes/Create
+        // POST: Jokes/Create functionality 
 
         [Authorize]
         [HttpPost]
@@ -73,7 +73,7 @@ namespace Library.Controllers
             return View(joke);
         }
 
-        // GET: Jokes/Edit/5
+        // GET: Jokes/Edit/5 functionality
         [Authorize]
         public IActionResult Edit(int? id)
         {
@@ -90,7 +90,7 @@ namespace Library.Controllers
             return View(joke);
         }
 
-        // POST: Jokes/Edit/5
+        // POST: Jokes/Edit/5 functionality
 
         [Authorize]
         [HttpPost]
@@ -124,7 +124,7 @@ namespace Library.Controllers
             return View(joke);
         }
 
-        // GET: Jokes/Delete/5
+        // GET: Jokes/Delete/5 functionality
         [Authorize]
         public IActionResult Delete(int? id)
         {
@@ -142,7 +142,7 @@ namespace Library.Controllers
             return View(joke);
         }
 
-        // POST: Jokes/Delete/5
+        // POST: Jokes/Delete/5 functionality
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize]
