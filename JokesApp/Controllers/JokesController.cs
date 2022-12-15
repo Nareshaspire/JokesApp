@@ -35,6 +35,20 @@ namespace Library.Controllers
         }
 
         // GET: Jokes/Details/5
+        /* public IActionResult Details(int? id)
+         {
+             if (id == null)
+             {
+                 return NotFound();
+             }
+             var joke = _repository.Get(id);
+             if (joke == null)
+             {
+                 return NotFound();
+             }
+
+             return View(joke);
+         }*/
         public IActionResult Details(int? id)
         {
             if (id == null)
@@ -62,16 +76,7 @@ namespace Library.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-       /* public IActionResult Create([Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
-        {
-            if (ModelState.IsValid)
-            {
-                _repository.Add(joke);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(joke);
-        }*/
-
+      
         public IActionResult Create([Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
         {
             if (ModelState.IsValid)
