@@ -62,6 +62,16 @@ namespace Library.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
+       /* public IActionResult Create([Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
+        {
+            if (ModelState.IsValid)
+            {
+                _repository.Add(joke);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(joke);
+        }*/
+
         public IActionResult Create([Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
         {
             if (ModelState.IsValid)
