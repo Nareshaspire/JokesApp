@@ -18,13 +18,21 @@ body {
 }
 table{
     background-color:whitesmoke;
+    border-radius:20px;
+    width:fit-content;
 }
 td{
     text-decoration:none;
+    background-color:chocolate;
 }
 p {
-    background-color: #FFD700;
+    background-color:navajowhite;
     text-decoration:none;
     border-radius: 50px;
+    border:5px 10px;
     width: fit-content;
+    font-style: italic;
+    text-decoration-line:none;
+    font-style: normal;
+
 }
