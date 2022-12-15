@@ -96,6 +96,7 @@ namespace Tests
         }
 
         [Fact]
+       
         public void TestExists()
         {
             var repoWrapper = MockRepositoryWrapper.GetMock();
@@ -105,6 +106,7 @@ namespace Tests
         }
 
         [Fact]
+       
         public void TestRemove()
         {
             var repoWrapper = MockRepositoryWrapper.GetMock();
