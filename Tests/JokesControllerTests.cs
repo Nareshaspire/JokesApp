@@ -114,7 +114,8 @@ namespace Tests
         }
 
         [Fact]
-        public void TestAdd()
+       
+       public void TestAdd()
         {
             var repoWrapper = MockRepositoryWrapper.GetMock();
             var repository = repoWrapper.Object;
@@ -124,6 +125,7 @@ namespace Tests
         }
 
         [Fact]
+       
         public void TestUpdate()
         {
             var repoWrapper = MockRepositoryWrapper.GetMock();
@@ -134,6 +136,7 @@ namespace Tests
         }
 
         [Fact]
+       
         public void TestFind()
         {
             var repoWrapper = MockRepositoryWrapper.GetMock();
