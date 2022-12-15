@@ -41,7 +41,6 @@ namespace Library.Controllers
             {
                 return NotFound();
             }
-
             var joke = _repository.Get(id);
             if (joke == null)
             {
