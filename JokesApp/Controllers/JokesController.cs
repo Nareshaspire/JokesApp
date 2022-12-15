@@ -109,6 +109,34 @@ namespace Library.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
+        /* public IActionResult Edit(int id, [Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
+         {
+             if (id != joke.Id)
+             {
+                 return NotFound();
+             }
+
+             if (ModelState.IsValid)
+             {
+                 try
+                 {
+                     _repository.Update(joke);
+                 }
+                 catch (DbUpdateConcurrencyException)
+                 {
+                     if (!_repository.Exists(joke.Id))
+                     {
+                         return NotFound();
+                     }
+                     else
+                     {
+                         throw;
+                     }
+                 }
+                 return RedirectToAction(nameof(Index));
+             }
+             return View(joke);
+         }*/
         public IActionResult Edit(int id, [Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
         {
             if (id != joke.Id)
