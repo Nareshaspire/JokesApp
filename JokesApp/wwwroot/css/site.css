@@ -15,6 +15,7 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color:plum;
 }
 table{
     background-color:whitesmoke;
@@ -36,3 +37,4 @@ p {
     font-style: normal;
 
 }
+

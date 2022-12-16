@@ -35,20 +35,7 @@ namespace Library.Controllers
         }
 
         // GET: Jokes/Details/5
-        /* public IActionResult Details(int? id)
-         {
-             if (id == null)
-             {
-                 return NotFound();
-             }
-             var joke = _repository.Get(id);
-             if (joke == null)
-             {
-                 return NotFound();
-             }
-
-             return View(joke);
-         }*/
+       
         public IActionResult Details(int? id)
         {
             if (id == null)
@@ -109,34 +96,6 @@ namespace Library.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        /* public IActionResult Edit(int id, [Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
-         {
-             if (id != joke.Id)
-             {
-                 return NotFound();
-             }
-
-             if (ModelState.IsValid)
-             {
-                 try
-                 {
-                     _repository.Update(joke);
-                 }
-                 catch (DbUpdateConcurrencyException)
-                 {
-                     if (!_repository.Exists(joke.Id))
-                     {
-                         return NotFound();
-                     }
-                     else
-                     {
-                         throw;
-                     }
-                 }
-                 return RedirectToAction(nameof(Index));
-             }
-             return View(joke);
-         }*/
         public IActionResult Edit(int id, [Bind("Id,JokeQuestion,JokeAnswer")] Joke joke)
         {
             if (id != joke.Id)
